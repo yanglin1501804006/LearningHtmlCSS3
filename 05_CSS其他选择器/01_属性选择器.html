@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [title] {
+            color: red;
+        }
+
+        [title='one'] {
+            color: green;
+        }
+
+        [title='one'] {
+            color: green;
+        }
+
+        [title~='one'] {
+            color: blue;
+        }
+        
+        [title|='one'] {
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div title="one">文字内容1</div>
+    <div title="aa one two">文字内容2</div>
+    <div title="bbone three">文字内容3</div>
+    <div title="one-four">文字内容4</div>
+</body>
+</html>

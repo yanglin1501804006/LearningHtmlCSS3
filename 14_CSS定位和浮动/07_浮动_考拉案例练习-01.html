@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 样式重置 */
+        h2 {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 整体布局 */
+        .wrap {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        .header {
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .header .left {
+            float: left;
+        }
+
+        .header .left h2 {
+            display: inline-block;
+        }
+
+        .header .left ul {
+            display: inline-block;
+        }
+
+        .header .left ul .first {
+            margin-left: 15px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .header .left ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .header .left ul .hot {
+            color: #ff080f;
+        }
+
+        .header .right {
+            float: right;
+        }
+
+        .header .right a {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .clear-fix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="header clear-fix">
+            <div class="left">
+                <h2>美妆专区</h2>
+                <ul>
+                    <li class="first"><span>热搜词：</span></li>
+                    <li><a class="hot" href="#">面膜</a></li>
+                    <li><a class="hot" href="#">口红</a></li>
+                    <li><a href="#">眼霜</a></li>
+                    <li><a href="#">精华</a></li>
+                    <li><a href="#">卸妆</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="#">更多好货 &gt;</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

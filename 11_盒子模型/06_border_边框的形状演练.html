@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .box1 {
+            /* 矩形 */
+            border-top: 10px solid red;
+        }
+
+        .box2 {
+            /* 梯形 */
+            border-top: 20px solid red;
+            border-left: 20px solid green;
+        }
+
+        .box3 {
+            width: 0;
+            height: 0;
+            border-top: 100px solid red;
+            border-left: 100px solid green;
+        }
+
+        .box4 {
+            width: 0;
+            height: 0;
+            border-top: 50px solid red;
+            border-right: 50px solid green;
+            border-bottom: 50px solid blue;
+            border-left: 50px solid orange;
+        }
+
+        .box5 {
+            border-left-color: transparent;
+            background-color: transparent;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box3 box5"></div>
+
+</body>
+</html>
