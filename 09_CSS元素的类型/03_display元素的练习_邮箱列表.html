@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* 样式重置 */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    /* 整体样式 */
+    .email {
+      width: 100px;
+      border: 2px solid #999;
+      text-align: center;
+    }
+
+    .eamail:hover ul {
+      display: block;
+    }
+
+    /* 局部header */
+
+    /* 不能使用这个 */
+    /* .header:hover+ul {
+      display: block;
+      /* background-color: #F00; */
+    }
+
+    */ .header {
+      background-color: #999;
+      columns: #fff;
+    }
+
+    /* 局部:邮箱列表 */
+    .email ul {
+      display: none;
+    }
+
+    .email ul li:hover {
+      background-color: skyblue;
+    }
+
+    .email ul li a {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- .mail>.hearer+ul>(li>a[href=#])*3 -->
+  <div class="email">
+    <div class="hearer">邮箱</div>
+    <ul>
+      <li><a href="#"></a>QQ邮箱</li>
+      <li><a href="#"></a>126邮箱</li>
+      <li><a href="#"></a>139邮箱</li>
+    </ul>
+  </div>
+</body>
+
+</html>

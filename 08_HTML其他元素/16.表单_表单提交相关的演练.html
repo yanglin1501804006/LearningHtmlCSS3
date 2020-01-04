@@ -46,7 +46,7 @@
 
 <body>
 
-  <form action="http://www.baidu.com" method="POST" target="_blank">
+  <form action="http://www.baidu.com" method="POST" enctype="multipart/form-data">
     <fieldset>
       <legend>必填信息</legend>
       <!-- 1.手机号码输入框 -->
@@ -82,7 +82,7 @@
       <!-- 4.照片选择(文件上传)-->
       <div>
         <label for="photo">照片: </label>
-        <input type="file" id="photo">
+        <input type="file" id="photo" name="phone">
       </div>
 
       <!-- 5.性别选择 -->
