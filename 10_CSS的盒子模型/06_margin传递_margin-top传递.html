@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+    }
+
+    /* 演示传递 */
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+
+      /* 避免传递 */
+      /* 方式1:添加padding-top不建议 */
+      /* padding-top: 5px; */
+
+      /* 方式2:添加border属性,不建议 */
+      /* border: 1px solid yellowgreen; */
+
+      /* 方式3:推荐--最有效的方法,添加BFC(block fomatter context) */
+      overflow: hidden;
+    }
+
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+
+      /* 左右是不会传递的 */
+      /* margin-left: 20px; */
+
+      /* 上下margin会进行传递的 */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+
+  <div class="box">
+    <div class="inner"></div>
+  </div>
+</body>
+
+</html>
